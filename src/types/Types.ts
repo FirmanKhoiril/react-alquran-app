@@ -1,8 +1,3 @@
-export type TSurat = {
-  nomor: string;
-  surat: string;
-};
-
 export interface IIndexOfSurat {
   surat: {
     id: number;
@@ -16,4 +11,10 @@ export type TIndexOfSurat = {
   ["translation_eng"]: string;
   content: string;
   transliteration: string;
+};
+
+export type ISurat = {
+  nomor: number;
+  surat: string;
+  arti: string;
 };
