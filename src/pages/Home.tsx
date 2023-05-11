@@ -16,13 +16,12 @@ const Home = () => {
     return { name: key, value: verse[key] };
   });
 
-  const { data, isError, isFetching, isLoading, error, isSuccess } = useQuery(["surah"], dataQuran, {
+  const { data, isError, isFetching, isLoading, isSuccess } = useQuery(["surah"], dataQuran, {
     refetchOnWindowFocus: false,
     staleTime: 60 * (10 * 60),
     refetchInterval: 60 * (10 * 60),
   });
 
-  console.log(data);
   return (
     <div>
       <Hero />
