@@ -19,3 +19,21 @@ export type ISurat = {
   arti: string;
   sejarah: string;
 };
+
+export type TVerses = {
+  name: string;
+  value: Object | any;
+};
+
+export type TContextProps = {
+  toogle: boolean;
+  verse: object;
+  searchTerm: string;
+  indexSurat: number;
+  verseDetail: object;
+  setVerseDetail: React.Dispatch<React.SetStateAction<object>>;
+  setVerse: React.Dispatch<React.SetStateAction<object>>;
+  setToogle: React.Dispatch<React.SetStateAction<boolean>>;
+  setIndexSurat: React.Dispatch<React.SetStateAction<number>>;
+  setSearchTerm: React.Dispatch<React.SetStateAction<string>>;
+};

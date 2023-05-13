@@ -1,1 +1,21 @@
+::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+}
 
+::-webkit-scrollbar-track {
+  background: #fde68a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fde68a;
+  height: 20px;
+  border-radius: 20px;
+  border: 5px solid #ffffff;
+}
+
+/* Firefox */
+* {
+  scrollbar-color: #fde68a white;
+  scrollbar-width: thin;
+}
