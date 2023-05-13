@@ -17,7 +17,7 @@ const QuranSelected = () => {
   };
 
   const dataVerses = verseDetail
-    ? Object.keys(verseDetail || {}).map((key: any) => {
+    ? Object.keys(verseDetail || {}).map((key: string) => {
         return { name: key, value: verseDetail[key as keyof typeof verseDetail] };
       })
     : [];
@@ -31,7 +31,7 @@ const QuranSelected = () => {
     staleTime: 3000,
     refetchInterval: 1000,
   });
-  // console.log(data);
+
   return (
     <Box>
       {isError && <Error />}

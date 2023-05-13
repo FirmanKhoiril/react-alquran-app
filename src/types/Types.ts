@@ -30,8 +30,8 @@ export type TContextProps = {
   verse: object;
   searchTerm: string;
   indexSurat: number;
-  verseDetail: object;
-  setVerseDetail: React.Dispatch<React.SetStateAction<object>>;
+  verseDetail: object | any;
+  setVerseDetail: React.Dispatch<React.SetStateAction<object | any>>;
   setVerse: React.Dispatch<React.SetStateAction<object>>;
   setToogle: React.Dispatch<React.SetStateAction<boolean>>;
   setIndexSurat: React.Dispatch<React.SetStateAction<number>>;

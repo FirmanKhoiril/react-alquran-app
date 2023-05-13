@@ -23,4 +23,4 @@ export const ContextProvider = ({ children }: { children: React.ReactNode }) => 
   return <StateContext.Provider value={{ toogle, verse, searchTerm, indexSurat, verseDetail, setVerseDetail, setVerse, setToogle, setIndexSurat, setSearchTerm }}>{children}</StateContext.Provider>;
 };
 
-export const useGlobalContext = (): TContextProps => useContext(StateContext);
+export const useGlobalContext: any = (): TContextProps => useContext(StateContext);
