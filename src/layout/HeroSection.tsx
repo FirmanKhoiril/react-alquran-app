@@ -6,7 +6,7 @@ const HeroSection = () => {
   const navigate = useNavigate();
   return (
     <Box sx={{ minHeight: 500, my: 10, display: "flex", flexDirection: { xs: "column", lg: "row-reverse" }, justifyContent: "space-around", alignItems: "center", gap: 10 }}>
-      <img className=" max-h-[320px]" src={Read} alt="read AlQuran" />
+      <img loading="lazy" className=" max-h-[320px]" src={Read} alt="read AlQuran" />
       <Box sx={{ display: "flex", flexDirection: "column", gap: { xs: 1, sm: 2 } }}>
         <Typography variant="h4">
           <span className=" text-[40px] sm:text-[57px] font-bold tracking-wide cursor-default">Mengenal diri sendiri melalui belajar membaca Al-Quran.</span>

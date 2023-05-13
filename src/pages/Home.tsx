@@ -4,10 +4,11 @@ import { fetchQuran } from "../api/FetchQuran";
 import { IsiSurat, Loading, Error } from "../components";
 import { useGlobalContext } from "../utils/ContextAPI";
 import { Box, Typography } from "@mui/material";
+import { TSurah } from "../types/Types";
 
 const Home = () => {
   const { verse, setVerse } = useGlobalContext();
-  const dataQuran = async () => {
+  const dataQuran = async (): Promise<TSurah> => {
     const data = await fetchQuran("1");
     setVerse(data?.verses);
     return data;
@@ -17,7 +18,7 @@ const Home = () => {
     return { name: key, value: verse[key] };
   });
 
-  const { data, isError, isFetching, isLoading, isSuccess } = useQuery(["surah"], dataQuran, {
+  const { data, isError, isFetching, isLoading, isSuccess } = useQuery<any>(["surah"], dataQuran, {
     refetchOnWindowFocus: false,
     staleTime: 60 * (10 * 60),
     refetchInterval: 60 * (10 * 60),
