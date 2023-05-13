@@ -12,6 +12,7 @@ const Home = () => {
     setVerse(data?.verses);
     return data;
   };
+
   const dataVerses = Object.keys(verse).map((key) => {
     return { name: key, value: verse[key] };
   });

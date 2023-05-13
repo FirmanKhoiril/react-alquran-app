@@ -17,4 +17,5 @@ export type ISurat = {
   nomor: number;
   surat: string;
   arti: string;
+  sejarah: string;
 };

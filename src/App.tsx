@@ -6,7 +6,7 @@ import { Footer, Navbar } from "./layout";
 
 function App() {
   return (
-    <Box sx={{ bgcolor: "#27272a", color: "whitesmoke", position: "relative" }}>
+    <Box sx={{ bgcolor: "#27272a", color: "whitesmoke", position: "relative", minHeight: "100vh" }}>
       <Container>
         <Routes>
           <Route path="/" element={<Navbar />}>

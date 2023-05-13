@@ -3,8 +3,7 @@ import { SearchBar, SearchResult } from "../components";
 
 const Filter = () => {
   return (
-    <Box>
-      Filter
+    <Box sx={{ position: "relative" }}>
       <SearchBar />
       <SearchResult />
     </Box>

@@ -11,9 +11,6 @@ const HeroSection = () => {
         <Typography variant="h4">
           <span className=" text-[40px] sm:text-[57px] font-bold tracking-wide cursor-default">Mengenal diri sendiri melalui belajar membaca Al-Quran.</span>
         </Typography>
-        <Typography variant="subtitle2" sx={{ color: "#a1a1aa" }}>
-          Temukan sumber daya dan materi pembelajaran lengkap untuk membantu Anda mempelajari cara membaca Al-Quran dengan baik dan benar. Al-Quran untuk mendukung gaya belajar Anda.
-        </Typography>
         <Typography variant="h5">
           <span className=" font-primary text-xl">Mulailah perjalanan Anda untuk mempelajari Al-Quran sekarang!</span>
         </Typography>
