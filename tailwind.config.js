@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         logo: ["Permanent Marker", "cursive"],
         primary: ["Open Sans", "sans-serif"],
+        body: ["Poppins", "sans-serif"],
       },
       textColor: {
         primary: "#fde68a",
