@@ -28,12 +28,12 @@ const QuranSelected = () => {
 
   const { data, isLoading, isFetching, isError, isSuccess } = useQuery(["suratSelected", id], dataSurat, {
     refetchOnWindowFocus: false,
-    staleTime: 3000,
+    staleTime: 1000,
     refetchInterval: 1000,
   });
 
   return (
-    <Box>
+    <>
       {isError && <Error />}
       {isFetching && isLoading ? (
         <Loading />
@@ -47,7 +47,7 @@ const QuranSelected = () => {
           </Box>
         )
       )}
-    </Box>
+    </>
   );
 };
 

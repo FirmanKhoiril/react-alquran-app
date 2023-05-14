@@ -25,8 +25,9 @@ const Home = () => {
   });
 
   return (
-    <div>
+    <>
       <Hero />
+
       {isError && <Error />}
       {isFetching && isLoading ? (
         <Loading />
@@ -40,7 +41,7 @@ const Home = () => {
           </Box>
         )
       )}
-    </div>
+    </>
   );
 };
 

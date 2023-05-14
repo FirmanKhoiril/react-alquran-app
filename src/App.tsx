@@ -12,6 +12,7 @@ function App() {
           <Route path="/" element={<Navbar />}>
             <Route path="/" index element={<Home />} />
             <Route path="/search" element={<Filter />} />
+
             <Route path="/search/:id" element={<QuranSelected />} />
           </Route>
         </Routes>

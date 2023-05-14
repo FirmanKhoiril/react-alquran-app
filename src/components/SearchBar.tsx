@@ -7,7 +7,7 @@ const SearchBar = () => {
     e.preventDefault();
   };
   return (
-    <form className="my-10  sticky top-16 z-20" onSubmit={handleSubmit}>
+    <form className="my-10  sticky top-[76px] z-20" onSubmit={handleSubmit}>
       <input
         type="text"
         value={searchTerm}

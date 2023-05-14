@@ -9,8 +9,8 @@ const Surat = ({ surat }: IIndexOfSurat) => {
       <Typography variant="h5" sx={{ color: "#cbd5e1" }}>
         {surat.transliteration}
       </Typography>
-      <Typography variant="h5" sx={{ color: "#a1a1aa" }}>
-        <span className="font-primary"> {surat.translation_eng}</span>
+      <Typography variant="h5" sx={{ color: "#a1a1aa", display: "flex", gap: 2, alignItems: "center" }}>
+        <span className="font-primary">{surat.translation_eng}</span>
       </Typography>
     </Box>
   );
