@@ -9,7 +9,7 @@ const Footer = () => {
       <Typography>
         <span className=" text-white/50 cursor-default text-[13px]">
           {" "}
-          Kami menggunakan layanan pihak ketiga untuk menyediakan fitur tertentu pada situs web kami. Dalam penggunaan layanan ini, kami tidak dapat mengontrol segala jenis informasi yang dikumpulkan oleh pihak ketiga/API.
+          Saya menggunakan layanan pihak ketiga untuk menyediakan fitur tertentu pada situs web kami. Dalam penggunaan layanan ini, kami tidak dapat mengontrol segala jenis informasi yang dikumpulkan oleh pihak ketiga/API.
         </span>
       </Typography>
     </Box>
